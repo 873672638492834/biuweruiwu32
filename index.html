@@ -1,0 +1,241 @@
+<!--                                                                         
+ *          .,:,,,                                        .::,,,::.          
+ *        .::::,,;;,                                  .,;;:,,....:i:         
+ *        :i,.::::,;i:.      ....,,:::::::::,....   .;i:,.  ......;i.        
+ *        :;..:::;::::i;,,:::;:,,,,,,,,,,..,.,,:::iri:. .,:irsr:,.;i.        
+ *        ;;..,::::;;;;ri,,,.                    ..,,:;s1s1ssrr;,.;r,        
+ *        :;. ,::;ii;:,     . ...................     .;iirri;;;,,;i,        
+ *        ,i. .;ri:.   ... ............................  .,,:;:,,,;i:        
+ *        :s,.;r:... ....................................... .::;::s;        
+ *        ,1r::. .............,,,.,,:,,........................,;iir;        
+ *        ,s;...........     ..::.,;:,,.          ...............,;1s        
+ *       :i,..,.              .,:,,::,.          .......... .......;1,       
+ *      ir,....:rrssr;:,       ,,.,::.     .r5S9989398G95hr;. ....,.:s,      
+ *     ;r,..,s9855513XHAG3i   .,,,,,,,.  ,S931,.,,.;s;s&BHHA8s.,..,..:r:     
+ *    :r;..rGGh,  :SAG;;G@BS:.,,,,,,,,,.r83:      hHH1sXMBHHHM3..,,,,.ir.    
+ *   ,si,.1GS,   sBMAAX&MBMB5,,,,,,:,,.:&8       3@HXHBMBHBBH#X,.,,,,,,rr    
+ *   ;1:,,SH:   .A@&&B#&8H#BS,,,,,,,,,.,5XS,     3@MHABM&59M#As..,,,,:,is,   
+ *  .rr,,,;9&1   hBHHBB&8AMGr,,,,,,,,,,,:h&&9s;   r9&BMHBHMB9:  . .,,,,;ri.  
+ *  :1:....:5&XSi;r8BMBHHA9r:,......,,,,:ii19GG88899XHHH&GSr.      ...,:rs.  
+ *  ;s.     .:sS8G8GG889hi.        ....,,:;:,.:irssrriii:,.        ...,,i1,  
+ *  ;1,         ..,....,,isssi;,        .,,.                      ....,.i1,  
+ *  ;h:               i9HHBMBBHAX9:         .                     ...,,,rs,  
+ *  ,1i..            :A#MBBBBMHB##s                             ....,,,;si.  
+ *  .r1,..        ,..;3BMBBBHBB#Bh.     ..                    ....,,,,,i1;   
+ *   :h;..       .,..;,1XBMMMMBXs,.,, .. :: ,.               ....,,,,,,ss.   
+ *    ih: ..    .;;;, ;;:s58A3i,..    ,. ,.:,,.             ...,,,,,:,s1,    
+ *    .s1,....   .,;sh,  ,iSAXs;.    ,.  ,,.i85            ...,,,,,,:i1;     
+ *     .rh: ...     rXG9XBBM#M#MHAX3hss13&&HHXr         .....,,,,,,,ih;      
+ *      .s5: .....    i598X&&A&AAAAAA&XG851r:       ........,,,,:,,sh;       
+ *      . ihr, ...  .         ..                    ........,,,,,;11:.       
+ *         ,s1i. ...  ..,,,..,,,.,,.,,.,..       ........,,.,,.;s5i.         
+ *          .:s1r,......................       ..............;shs,           
+ *          . .:shr:.  ....                 ..............,ishs.             
+ *              .,issr;,... ...........................,is1s;.               
+ *                 .,is1si;:,....................,:;ir1sr;,                  
+ *                    ..:isssssrrii;::::::;;iirsssssr;:..                    
+ *                         .,::iiirsssssssssrri;;:.                      
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>biubio</title>
+<meta name="author" content="biubio">
+<meta name="description" content="biubio's personal website">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAC+lBMVEUAAADw8PDw8PDy8vL////v7+/w8PDw8PD29vb+/v5GRloxOk/X19z5+fn29vbv7+/y8vL09PT29vbs7Oz4+Pj///8Pt6IStJ8vlon6+voUsp4tl4oQtaAsmYwonY/9/f0LuqQJvaYmn5EtmIsqmo3uXr4NuKINuaMbI0AKu6UYIT38+/skopMSiIUUl43nW7cXZ3AVdXgZN0/yX8Hoj7QUsJ0YYmwXWmAeLEreV6oIv6gUrJoZUl/qXbnmWrPmirHiWa4PoJQSk4sOjokUbXQ2LEwwKErk4+fkWbAeqZgTpJUrnY4TfH4hcnHnhq/jfqvhd6YdnpAMmJAYk4kYhYIZSlodQ1YdJ0fh4OTlgq0UtqEMnZImmo1sdIonk4gli4ISgIAVd3xCY3M2XG8WW2sfX2QbTWEeVV3moFwYPVIcM0snJUUfJETc3ODGxc3jeqjdVqcVp5gUnJANk4tdMmNHLlcxOVUfHkPS09gIwankc6USuaPLUqMKrZ0MqZoqoZEvnI4dl4sXkIiVRIYYf34mhH1QYHYbdnQXb3FxO29OUGkWVGYpLUsYHzq9v8j3YcSsrbriWKyWnavMg6WSlKSzTJgOo5YjpZV0gZOuXYkOg4GKQYGAP3wtcHpgYXdZW3F7TnEhaW1WM14+K1PulLjaWLTicaPUVKMar5wgppXCZ5Qif3qLT3Z6PHVTVm0/NkoUK0EWGzbNzdbKytKBhJOuSY4VjoabWYEieHkzZXRCWnEkY2tgNmkyS2VjQ2MmS2FOMF4/RV0QMUYgID4SIjzX1t3Z1dy6uMOgoK7rgK0Gsp+HiJqyb5OoSZJ1d4yjaosdjIVYcoSWZISHXHtKTl5OPFtbXljEjVVKNlW0t8HtirPWVrHXVqzrearVfqa+UKKhRotjZ35Lbn05b3gOYmwUQlvemVrYkFhcR1DIyNHxl7qZr7h5nKfJcZx6iZtTgpBCe4hubX9uUno+aXUqW22heVS1elGkqLffg6szjZFnSHPtqV7Lk1qTc00V3dobAAAAD3RSTlMA24pRBfOlVdyl8/PZVVUotVDQAAAJ2klEQVRYw4yUz2saQRTHtc2Po+4vl1mE3b0osmxYA4roSXdBEE+LrSEiaCNCSxNIhVgRPZSQQw1BREQCaek/0ENyaVJC6CFtSaCQY48tzaG0tD0USm99M+u46Y9Dv7pvZ96899n3ZtnxEM3Mz3lnfY44fHEcGNBk5vtTs965+RnPVNe9E7/f71JoLuXREPwn8l6n+dc4J9dPLmf9ytO5qwC/I4dxbZIPw/+rgEY5hhKu40iXjUeTB/8T4ARRQRczXo4CGIQYsk4BIHz/dwtk1TvjmXcLWBoOVtnpsisOy81n8WNgRPDznjlnETxsuVotc4wLcDlX0hluWN5hpyXMebx0kc2unHWerSFKAKQjCnHm8rBqH/kgyPF5PbMUzq4e1mu7P3jGIdBmKY7Wz321R3v3ecqd9QDF2UGWWzFq1mcfEBwG+BiWjqkDvfxZu00BWB6yBQSgbZV2o1+XNJZnIQ8ns/4l5DKwi5XXNvO1wyzLkD10ALQCNDb1yt5LGfFAAApCKPvGh1gQIWInL7z9UNJvIQBgwh+AvlUyeweCBuKRJhzss0sbY7+sESJJ5zXtU69hlzUATF6wh+4vw/KrJ2dm7ROSZQHEr345Piqf3CjfZ2CGITxCmuz7/MHWBwCYEKACUggBMEfdUvSCgfDs/Z3hYSNdtSuV/Pfxq9MsKxDJQvZbtbR3MGkBV+/xuQD2S9426h+XXg0ujhNFKx1JqqGGeha9PH53/vrtzj7G7NdtfcvPOwCMcCuABncu8zVr5Ztu2qPdSsbuJEFKUu2YVm+xub3x4vGb1+NerXKB39PfFfBIzp7o3VK6k2wlW0qy1YqoWBE1mQyNzEap1Ni1nveqVm2AEI/3ABAugGEB0L+ZaalqkmRhE8FGgXsELHBU5azT7V7uyIj04LbAkS3QuGOzBYEdJUJ+ihIhAzJSwgrwQmqrpdbeMRoA6FsAM6lAGBgdvVrJ5NOqooSUMBYkh2GkEEW6ZnohY3d7fcHdRaiAvgR5K1NvNpsJM6Mq4RD8XAEPHGperxebibi5hZALIGcO/mzk0++lO/HMgj7qhEOgQCgUDIAlChPHqGTk8/Vi+smBTD5aWoHTgtB/BiVaRiZAFMImGMSWKhgIpqvRe/luYQg9TE6KaQu8cF4I5OrF87HeDjjJJD9IMrGBWe7mxvi9HV4oA4BW4ALKekC/m+gP6goEgwAgYoRzw7i2VXyxVo4G0lsyAEg+BTAAeGQCoLi9XW8Hg6IIf7iBAWGDHW2jmNjYtsTRLQ5NK6BbgOSnjeX13t3mYjUlYkkiPL3dbgdEjCGeoL54t3l7YXl061T+G8A/bIhSIW4ZUQliyZWpRKP5QhrDROJbiBuGcW85t7IvEAA5D7jJccJgwLoV31zHwTFJikG+ETes6IOUBLNYTJRShVpvMwaANQcAAgDOBwD7sAFpsZS0LKbWc/ce5DbvFBOgYnFRTz2oRAuZ3LokpVIxSfwdQI5rAvhVeJnHJBXHAbzWfZvashiwCWyMEFQMdCJZDZKIiiFUzqBsRIBdDqwVmxCR0qJyxYygRKi8MnV5dJiZ2uGyNI+y+1zX1h/Vaq1j6/vjcejW1uc933u+3+/3ed/fj9+x32L03azUvMwEdnxc6tz5Rdodubm5O5Lj5wKpTWwuexkjdTY8BwTYnIjWewC1Qdz8udsZcWwuN2F7Foo5K3OjJjlRlgBaRNb2vVwZO46xdO7Cf0ZAPBdX0VQklyVIsnbPTl26MI/ByGOs58Y3MaRS6aJF8N/S7amMIpmsSLpww4egIAoTzESD8dzxPexkLZfN4cquXs159erelcTERG2in4H7gFyjkcuTk+XxjOCvgDpSaDDOKj1epJFTVx3g+3z7G25s3rxkbVuN2+12uVw2wfe379599+rbfLoO+MKyS9eJ0cEIwoKT6+IzuTpDi+v54y8HISnymIXi59Dz9+82bdr04OxpptHRoskrPH5pM3FYG0QEBXF7zO01lEMsFvPLTkiMbHCfZlEoLOZpx/u3mIDFYlnapRVNOauJwZVheARNFb2dLgqUofzcuXpGRHSDwGZkUdLc3raQgHLoTl1vRR4Iov2CqBECaUVmp4WFYm4pbdjy8NYAtbPlEMuoo3XW/v616cEfz2MkgAgYOUuIkZGhKgR64qzSPcK9nVi1HxsO5OcfyKXSDEzWcwGVmlv77Vvt4B0mBQQas5DxNdQGUcME+0BQZ0lDsNpoAJVK4zvSXuiogK7GcZoJKZQXMgkIbhCDC3xYQNwnFe5td6UxAYqXCiCHoAUCAARPIAHhelMplLzeGe5I4bEAgt72mgwmj8dLc6PiOr6OFkTwBN4D6bYEIQjOj+jK/kl5XlSOVGjW6J/wMoByn11w1lnVzKdRdYahIb5dnwJveRk84+AeYaXk9UEQYIZQFYirc6SVEo7PyEsHeG1855ldZ854BB5nVVWVk2/JSEdkOOSSykrJiZsoAmC4YGeOuZJeWOfIKC4uTnfwnbug/BmnbRfiaas7JT2lGI4ajpBOl5yAtQkiGDEaZ225aC4pMSfaylNSUtJtrSsRW6vOPkX3p2f18BpozM8sQYJbI6vgn9VvXjTT6SVcvmXbtm3F3uatK7fCWdXctRXoajYY4XXKCz23hA4C8VGsCoGxgHXEw5eRoLrO21i+rdjQvcLPJ2cXunU1+0BQ3qhP7qUjxLdRBOE2wNbmy9mxsbF0js5b01hu6F4DrFjz7NNy9PDIY2g0Wmy+3AslsQC96C4sTWEBGEBwVIUEsYpEnUFvE/Qs9/PjGVzWLH/U2qHXezvsZSgHEnwOCcIRNIAAodR2CPg0T9KCMI+e1dYLBB3UMkJQcBIEgUYcFxTc5YCAQCDEKjX2ejt/QVKYUz32+nq7tholIwoKS4lzsOV53KjRQcFnTjaWHKtQ1dXb+5OOLPj48RSQdOrIUD1Nq1IQCNnZAcG56DnYaBo9anxQ8BIEAUVBtVp7oK+vr6f7CJB0pLVOfllZQCAT4ISLCAQRAcH4URNC8wmHnK0UkUUiEZksKlCIta2e/v7+vu4eD5+rLCiAt0EUosL9M+ZhbTABNl3Y0kgs5eAV1ZANT4Y/q5VsVefXDg0O1vLlYhxZqSDj8WQ40E0pKhyIwiaE0WNh2xcREHBJCrEIj4GzqtRqFUcmk3HZZWXiahweTyIF0kQXyIXXlmBT0hj/xtM/n0Sf45CUKhMegTLjcFaxSg2WsmoFCZXHkQBIgc/gxZggtHVF25XI/SBQmyADDk4APmjCm0wmKBqChA5lGUl8bTUSQHmMMRMj50UMcHBWEGDZY/x5Y2LgAa4Aeg5gvYwT58OsOhHiDzJ22qTRkzkxF9SmmP9jVcWIp0ydNB3b/v8FMW2WX5UOQ+QAAAAASUVORK5CYII=">
+<style type="text/css">
+    * {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+    html {min-height:100%;}
+    body {font:400 18px/1.6 Georgia,Helvetica Neue,Arial,Helvetica,Arial,sans-serif;}
+    a {text-decoration:none;border-bottom:2px;word-wrap:break-word;}
+    a:hover {text-decoration:none;}
+    li{list-style:none;}
+    .code-html {font-family:Helvetica Neue,Arial,Helvetica,Arial,sans-serif;}
+    .wrap {width:770px;margin:0 auto;letter-spacing:.2px;padding-bottom:50px;}
+    .wrap .content {padding:6px 20px 6px 30px;font-size:22px;}
+    .wrap.aboutme {padding-top:60px;-webkit-animation:fade-in-up 700ms 0ms ease-in-out both;animation:fade-in-up 700ms 0ms ease-in-out both;}
+    .wrap.aboutme .content {font-size:50px;line-height:1.2;}
+    .wrap.introduction {-webkit-animation:fade-in-up 700ms 200ms ease-in-out both;animation:fade-in-up 700ms 200ms ease-in-out both;}
+    .wrap.introduction span {display:block;line-height:1.2;padding-bottom:12px;}
+    .wrap.introduction span:last-child{padding-bottom:0}
+    .wrap.introduction a:hover{opacity:.8}
+    .wrap.introduction span .lucky{font-weight:400}
+    .wrap.introduction span .lucky svg{width:22px; height:22px;position:relative;top:2px}
+    .wrap.links {-webkit-animation:fade-in-up 700ms 400ms ease-in-out both;animation:fade-in-up 700ms 400ms ease-in-out both;}
+    @media (max-width:768px) {.wrap {width:100%;padding:0 20px 40px 20px;}
+    .wrap.aboutme {margin-top:20px;}
+    .wrap.aboutme .content {font-size:40px;}
+    .wrap.introduction .content {font-size:20px;}
+    .wrap.links .content {font-size:18px;}
+    }
+    @-webkit-keyframes fade-in-up {0% {-webkit-transform:translateY(40px);transform:translateY(40px);opacity:0;}
+    100% {-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
+    }
+    :where(html){--ease-1:cubic-bezier(.25,0,.5,1);--ease-2:cubic-bezier(.25,0,.4,1);--ease-3:cubic-bezier(.25,0,.3,1);--ease-4:cubic-bezier(.25,0,.2,1);--ease-5:cubic-bezier(.25,0,.1,1);--ease-in-1:cubic-bezier(.25,0,1,1);--ease-in-2:cubic-bezier(.50,0,1,1);--ease-in-3:cubic-bezier(.70,0,1,1);--ease-in-4:cubic-bezier(.90,0,1,1);--ease-in-5:cubic-bezier(1,0,1,1);--ease-out-1:cubic-bezier(0,0,.75,1);--ease-out-2:cubic-bezier(0,0,.50,1);--ease-out-3:cubic-bezier(0,0,.3,1);--ease-out-4:cubic-bezier(0,0,.1,1);--ease-out-5:cubic-bezier(0,0,0,1);--ease-in-out-1:cubic-bezier(.1,0,.9,1);--ease-in-out-2:cubic-bezier(.3,0,.7,1);--ease-in-out-3:cubic-bezier(.5,0,.5,1);--ease-in-out-4:cubic-bezier(.7,0,.3,1);--ease-in-out-5:cubic-bezier(.9,0,.1,1);--ease-elastic-1:cubic-bezier(.5,.75,.75,1.25);--ease-elastic-2:cubic-bezier(.5,1,.75,1.25);--ease-elastic-3:cubic-bezier(.5,1.25,.75,1.25);--ease-elastic-4:cubic-bezier(.5,1.5,.75,1.25);--ease-elastic-5:cubic-bezier(.5,1.75,.75,1.25);--ease-squish-1:cubic-bezier(.5,-.1,.1,1.5);--ease-squish-2:cubic-bezier(.5,-.3,.1,1.5);--ease-squish-3:cubic-bezier(.5,-.5,.1,1.5);--ease-squish-4:cubic-bezier(.5,-.7,.1,1.5);--ease-squish-5:cubic-bezier(.5,-.9,.1,1.5);--ease-step-1:steps(2);--ease-step-2:steps(3);--ease-step-3:steps(4);--ease-step-4:steps(7);--ease-step-5:steps(10)}
+    .sun-and-moon>:is(.moon,.sun,.sun-beams){transform-origin:center center}
+    .sun-and-moon>:is(.moon,.sun){fill:var(--icon-fill)}
+    .theme-toggle:is(:hover,:focus-visible)>.sun-and-moon>:is(.moon,.sun){fill:var(--icon-fill-hover)}
+    .sun-and-moon>.sun-beams{stroke:var(--icon-fill);stroke-width:2px}
+    .theme-toggle:is(:hover,:focus-visible) .sun-and-moon>.sun-beams{stroke:var(--icon-fill-hover)}[data-theme=dark] 
+    .sun-and-moon>.sun{transform:scale(1.75)}[data-theme=dark]
+    .sun-and-moon>.sun-beams{opacity:0}[data-theme=dark]
+    .sun-and-moon>.moon>circle{transform:translate(-7px)}@supports (cx: 1){[data-theme=dark]
+    .sun-and-moon>.moon>circle{transform:translate(0);cx:17}}
+    @media (prefers-reduced-motion: no-preference){
+        .sun-and-moon>.sun{transition:transform .5s var(--ease-elastic-3)}
+        .sun-and-moon>.sun-beams{transition:transform .5s var(--ease-elastic-4),opacity .5s var(--ease-3)}
+        .sun-and-moon .moon>circle{transition:transform .25s var(--ease-out-5)}@supports (cx: 1){.sun-and-moon .moon>circle{transition:cx .25s var(--ease-out-5)}}[data-theme=dark]
+        .sun-and-moon>.sun{transform:scale(1.75);transition-timing-function:var(--ease-3);transition-duration:.25s}[data-theme=dark]
+        .sun-and-moon>.sun-beams{transform:rotate(-25deg);transition-duration:.15s}[data-theme=dark]
+        .sun-and-moon>.moon>circle{transition-delay:.25s;transition-duration:.5s}}
+        .theme-toggle{--size: 1.6rem;--icon-fill: hsl(210 10% 30%);--icon-fill-hover: hsl(210 10% 15%);background:none;border:none;padding:0;inline-size:var(--size);block-size:var(--size);aspect-ratio:1;border-radius:50%;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;outline-offset:5px;position:fixed;right:50px;bottom:50px;}
+        .theme-toggle>svg{inline-size:100%;block-size:100%;stroke-linecap:round}[data-theme=dark]
+        .theme-toggle{--icon-fill: hsl(210 10% 70%);--icon-fill-hover: hsl(210 15% 90%)
+        }
+    html{block-size:100%;color-scheme:light;color:#1b1b1b}
+    ::selection{background:#1b1b1b;color:#fff}
+    a{color:#1b1b1b;}
+    a:hover,.introduction a{border-bottom: 2px solid #1b1b1b}
+    .code-html{color: #D1DCE9}
+    html[data-theme=dark]{color-scheme:dark}
+    html[data-theme=dark]{background-color:#17181a;color:#fff}
+    html[data-theme=dark] ::selection{background:#fff;color:#1b1b1b}
+    html[data-theme=dark] a{color:#fff}
+    html[data-theme=dark] a:hover{border-bottom: 2px solid #fff}
+    html[data-theme=dark] .introduction a{border-bottom: 2px solid #fff}
+    html[data-theme=dark] .code-html{color:#4E5258}
+    html[data-theme=dark] .wrap.introduction span .lucky svg path{fill:#fff}
+    @supports not (color-scheme: light){html[data-theme=light]{}}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0SJ8NMP7TH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0SJ8NMP7TH');
+</script>
+</head>
+
+<body>
+<section class="wrap aboutme">
+    <p class="code-html">
+        &lt;h1&gt;
+    </p>
+    <h1 class="content">
+        Hi!<br>
+    	I'm biubio
+    </h1>
+    <p class="code-html">
+        &lt;/h1&gt;
+    </p>
+</section>
+<section class="wrap introduction">
+    <p class="code-html">
+        &lt;p&gt;
+    </p>
+    <p class="content">
+        <span>A minimalist, product designer, and serial entrepreneur.</span>
+        <span>Also an independent developer and creator of <a href="https://h5ui.io" title="H5UI" class="loud-link-click" data-sound="click" target="_blank">H5UI</a>.</span>
+        <span>I live with my lucky charm, a cat named <strong class="lucky"><svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M773.467429 358.454857c86.272-15.469714 142.189714-76.745143 139.958857-123.172571-3.584-74.953143-57.691429-112.621714-174.336-113.097143h-1.499429a25.417143 25.417143 0 0 1-25.307428-22.637714 21.833143 21.833143 0 0 1 20.461714-24.210286l4.242286-0.256c34.706286-2.194286 73.069714-3.474286 93.769142 1.426286 86.308571 20.461714 134.217143 72.502857 138.24 156.105142 3.2 66.486857-46.262857 131.474286-115.876571 182.857143a100.845714 100.845714 0 0 1-2.029714 1.462857c13.476571 23.588571 22.089143 49.92 25.874285 79.030858 13.129143 84.260571 0.914286 136.667429 10.276572 171.373714 9.380571 34.724571 52.041143 53.76 68.882286 92.544 16.822857 38.765714 13.714286 55.771429 8.777142 86.308571-2.907429 18.102857-9.490286 44.580571-19.712 79.396572a18.541714 18.541714 0 0 1-17.792 13.312h-61.641142c-10.24 0-18.541714-8.301714-18.541715-18.541715v-9.325714a18.541714 18.541714 0 0 1 18.742857-18.541714c8.32 0.109714 15.414857-2.084571 21.284572-6.582857 14.829714-11.337143 16.054857-17.664 16.054857-39.716572 0-14.701714-5.339429-29.494857-16.054857-44.379428-42.971429-27.940571-78.902857-49.773714-110.610286-65.828572-3.254857 32.219429-9.691429 61.513143-19.254857 87.881143-10.057143 27.721143-27.538286 62.994286-52.425143 105.801143a18.541714 18.541714 0 0 1-16.036571 9.234286h-48.786286c-10.057143 0-18.285714-8.009143-18.523429-18.066286l-0.219428-8.411429a18.541714 18.541714 0 0 1 17.664-19.017142l25.508571-1.206858c7.533714-0.365714 14.098286-5.248 16.603429-12.361142 8.448-23.990857 11.922286-47.561143 10.422857-70.729143-1.718857-26.130286-10.404571-61.750857-26.075429-106.898286-65.097143-0.585143-197.156571 27.666286-227.565714 30.189714-7.168 0.603429-14.537143 0.548571-22.089143-0.109714a257.883429 257.883429 0 0 0-11.392 59.209143c-1.883429 24.338286-2.048 67.145143-0.512 128.402286a18.541714 18.541714 0 0 1-18.541714 18.998857h-50.669714c-10.24 0-18.541714-8.301714-18.541715-18.541715v-12.726857c0-10.24 8.301714-18.541714 18.541715-18.541714h7.808a17.993143 17.993143 0 0 0 16.896-24.173714 508.617143 508.617143 0 0 1-22.326857-79.890286l-60.928 142.628571c-2.925714 6.820571-9.636571 11.245714-17.060572 11.245715h-67.291428c-10.24 0-18.56-8.301714-18.56-18.541715v-9.472c0-8.996571 6.454857-16.694857 15.305142-18.249142l32.036572-5.686858c4.022857-0.731429 7.716571-2.742857 10.477714-5.778285 13.019429-14.317714 21.394286-32.164571 25.161143-53.522286 9.289143-52.681143 15.177143-58.386286 0-109.037714-4.937143-16.548571-41.179429-32.676571-64.365714-105.984-14.866286-46.921143-28.032-126.628571-39.533715-239.122286a18.541714 18.541714 0 0 0-15.469714-16.420571l-35.620571-5.76c-5.485714-0.896-10.294857-4.205714-13.092572-9.014858L59.977143 293.595429a18.541714 18.541714 0 0 0-0.768-1.225143A22.674286 22.674286 0 0 1 54.857143 279.350857c0-3.584 0.932571-7.277714 2.797714-11.099428 0.987429-2.011429 2.322286-3.84 3.968-5.376l36.845714-34.614858c2.56-2.432 4.406857-5.540571 5.284572-8.96l2.084571-8.283428c1.865143-7.369143 5.961143-14.006857 11.702857-18.980572 11.081143-9.545143 19.254857-15.945143 24.539429-19.2 6.582857-4.041143 20.260571-8.905143 40.996571-14.555428-10.532571-14.738286-16.310857-27.629714-17.334857-38.692572-1.554286-16.585143-2.870857-33.005714 3.84-33.645714 4.498286-0.420571 15.872 11.940571 34.139429 37.083429-1.426286-31.762286 1.773714-45.805714 9.636571-42.093715 7.862857 3.693714 25.088 25.106286 51.748572 64.237715l26.002285 29.622857a129.792 129.792 0 0 1 27.209143 49.792c13.129143 45.714286 25.636571 78.610286 37.485715 98.724571 21.193143 35.876571 47.177143 80.054857 131.620571 73.508572 84.425143-6.528 112.822857-23.625143 169.069714-32.475429a799.451429 799.451429 0 0 1 86.893715-8.429714 115.931429 115.931429 0 0 1 30.08 2.541714z" fill="#1b1b1b"></path></svg> Lucky.</strong></span>
+    </p>
+    <p class="code-html">
+        &lt;/p&gt;
+    </p>
+</section>
+<section class="wrap links">
+    <p class="code-html">
+        &lt;ul&gt;
+    </p>
+    <ul class="content">
+        <li>
+            <a href="https://dribbble.com/biubio" title="biubio on Dribbble" class="loud-link-click" data-sound="click" target="_blank">Dribbble</a>
+        </li>
+        <li>
+            <a href="https://x.com/biubio_eth" title="biubio on X" class="loud-link-click" data-sound="click" target="_blank">X</a>
+        </li>
+        <li>
+            <a href="https://instagram.com/biubio.eth" title="biubio on Instagram" class="loud-link-click" data-sound="click" target="_blank">Instagram</a>
+        </li>
+        <li>
+            <a href="https://github.com/biubio" title="biubio on Github" class="loud-link-click" data-sound="click" target="_blank">Github</a>
+        </li>
+        <li>
+            <a href="https://app.ens.domains/biubio.eth" title="biubio.eth on ENS" class="loud-link-click" data-sound="click" target="_blank">ENS</a>
+        </li>
+    </ul>
+    <p class="code-html">
+        &lt;/ul&gt;
+    </p>
+</section>
+<button class="theme-toggle loud-link-click" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite" data-sound="click">
+  <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+    <mask class="moon" id="moon-mask">
+      <rect x="0" y="0" width="100%" height="100%" fill="white" />
+      <circle cx="24" cy="10" r="6" fill="black" />
+    </mask>
+    <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+    <g class="sun-beams" stroke="currentColor">
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="21" y1="12" x2="23" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+     </g>
+  </svg>
+</button>
+<script type="text/javascript">
+    const storageKey = 'theme-preference'
+    const onClick = () => {
+      // flip current value
+      theme.value = theme.value === 'light'
+        ? 'dark'
+        : 'light'
+      setPreference()
+    }
+    const getColorPreference = () => {
+      if (localStorage.getItem(storageKey))
+        return localStorage.getItem(storageKey)
+      else
+        return window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+    }
+    const setPreference = () => {
+      localStorage.setItem(storageKey, theme.value)
+      reflectPreference()
+    }
+    const reflectPreference = () => {
+      document.firstElementChild
+        .setAttribute('data-theme', theme.value)
+      document
+        .querySelector('#theme-toggle')
+        ?.setAttribute('aria-label', theme.value)
+    }
+    const theme = {
+      value: getColorPreference(),
+    }
+    reflectPreference()
+    window.onload = () => {
+      reflectPreference()
+      document
+        .querySelector('#theme-toggle')
+        .addEventListener('click', onClick)
+    }
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', ({matches:isDark}) => {
+        theme.value = isDark ? 'dark' : 'light'
+        setPreference()
+      })
+      /*! loudlinks, v1.2 https://github.com/MahdiF/loud-links @preserve */
+      var loudlinks=function(e){function t(){var e,t,r=this.getAttribute("data-sound")||this.getAttribute("data-src");r&&(r.indexOf("{{type}}")>0?(e=r.replace(c,"mp3"),t=r.replace(c,"ogg")):(e=g+r+".mp3",t=p+r+".ogg"),l||(l=!0,u.addEventListener("error",function(){s.error("The mp3 file URL is wrong!")}),d.addEventListener("error",function(){s.error("The ogg file URL is wrong!")})),(u.src!==e||d.src!==t)&&(u.setAttribute("src",e),d.setAttribute("src",t),a.load()),a.play())}function r(){a.pause(),a.currentTime=0}function n(e){e.addEventListener("mouseenter",t),e.addEventListener("mouseleave",r),e.addEventListener("touchmove",r),e.addEventListener("click",r)}function o(e){e.addEventListener("click",t)}function i(){var t,r=e.getElementsByClassName("loud-link-hover"),s=e.getElementsByClassName("loud-link-click"),a=r.length,u=s.length;for(t=0;a>t;t++)n(r[t]);for(t=0;u>t;t++)o(s[t]);return i}var s=window.console||{};if(s.log=s.log||function(){},s.error=s.error||s.log,!e.createElement("audio").canPlayType)return s.error("Your browser doesn't support audio awesomeness."),function(){};s.log("Audio works like a charm!");var a=e.createElement("audio"),u=e.createElement("source"),d=e.createElement("source"),l=!1,c=/{{type}}/gi,g="sounds/mp3/",p="sounds/ogg/";return a.setAttribute("preload",!0),u.setAttribute("type","audio/mpeg"),d.setAttribute("type","audio/ogg"),a.appendChild(u),a.appendChild(d),e.body.appendChild(a),i()}(document);
+</script>
+</body>
+</html>
